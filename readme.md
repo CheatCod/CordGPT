@@ -25,3 +25,7 @@ Also texting a bot in discord is much easier than using a website IMO.
 5. Fill out the .env file with your Discord ot and OpenAI token
 6. Fill in init.txt with the text you want to start the bot with
 7. Run `cargo run --release` or `./target/release/cordgpt`
+
+# Usage
+
+@mention the bot in a channel or direct message with a prompt.
