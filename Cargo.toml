@@ -1,0 +1,20 @@
+[package]
+name = "cordgpt"
+version = "0.1.0"
+edition = "2021"
+description = "A discord bot that uses ChatGPT APIs to generate text"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = {version = "1.21.2", features = ["full"]}
+reqwest = {version ="0.11.12", features = ["json", "stream"]  } 
+dotenvy = "0.15.6"
+serde_json = "1.0.82"
+serde = { version = "1.0", features = ["derive"] }
+futures = "0.3.21"
+chrono = "0.4.22"
+serenity = {version = "0.11", default-features = false, features = ["client", "gateway", "rustls_backend", "model", "cache"]}
+tracing-subscriber = "0.3.16"
+tracing = "0.1.37"
+color-eyre = "0.6.2"
